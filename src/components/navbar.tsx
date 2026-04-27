@@ -54,33 +54,28 @@ const Navbar = () => (
       <div className='navbar-center hidden lg:flex space-x-6'>
         <Link
           href='#'
-          className={`${manrope.className} font-bold text-sm text-base-content hover:text-accent hover:underline hover:underline-offset-6 hover:decoration-2: hover:decoration-accent`}
+          className={`${manrope.className} font-bold text-sm text-base-content`}
         >
           WHY THIS MATTERS
         </Link>
         <Link
           href='#'
+          className={`${manrope.className} font-bold text-sm text-base-content hover:text-accent hover:underline hover:underline-offset-6 hover:decoration-2: hover:decoration-accent`}
+        >
+          WHY JOIN
+        </Link>
+
+        <Link
+          href='#'
           className={`${manrope.className} font-bold text-sm text-base-content`}
         >
-          ABOUT
+          SPONSORSHIP TIERS
         </Link>
         <Link
           href='#'
           className={`${manrope.className} font-bold text-sm text-base-content`}
         >
-          ABOUT
-        </Link>
-        <Link
-          href='#'
-          className={`${manrope.className} font-bold text-sm text-base-content`}
-        >
-          WHO SHOULD ATTEND
-        </Link>
-        <Link
-          href='#'
-          className={`${manrope.className} font-bold text-sm text-base-content`}
-        >
-          PARTNERSHIPS
+          PARTNER WITH US
         </Link>
       </div>
       <div className='navbar-end'>

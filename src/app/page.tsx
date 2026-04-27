@@ -14,6 +14,7 @@ import LocationIcon from '@/components/icons/location-icon';
 import UserGroupIcon from '@/components/icons/user-group-icon';
 import Navbar from '@/components/navbar';
 import OpportunityCard from '@/components/opportunity-card';
+import ProcessStep from '@/components/process-step';
 import SectionHeading from '@/components/section-heading';
 import SubHeading from '@/components/sub-heading';
 import Tier from '@/components/tier';
@@ -49,8 +50,11 @@ export default function Home() {
               <div className='lg:hidden w-full py-6'>
                 <Image
                   src={SpekeResortConferenceRoomImage}
-                  alt='An image of speke resort munyonyo conference room small screen version'
+                  width={1196}
+                  height={900}
+                  placeholder='blur'
                   className='w-full h-auto rounded-lg object-cover shadow-lg'
+                  alt='An image of speke resort munyonyo conference room small screen version'
                 />
               </div>
 
@@ -82,6 +86,9 @@ export default function Home() {
             <div className='hidden lg:block w-full max-w-xl'>
               <Image
                 src={SpekeResortConferenceRoomImage}
+                width={1196}
+                height={900}
+                placeholder='blur'
                 alt='An image of speke resort munyonyo conference room'
                 className='w-full h-auto rounded-2xl object-cover lg:rotate-6 shadow-lg'
               />
@@ -135,6 +142,9 @@ export default function Home() {
                 <div className='w-full lg:w-1/2'>
                   <Image
                     src={SpekeResortEntranceImage}
+                    width={1200}
+                    height={800}
+                    placeholder='blur'
                     alt='An image of the speke resort munyonyo entrance'
                     className='w-full h-auto rounded-lg object-cover shadow-lg'
                   />
@@ -288,41 +298,26 @@ export default function Home() {
               </div>
 
               <div className='w-full h-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
-                <div className=''>
-                  <h2 className='font-bold text-5xl text-primary/20'>01</h2>
-                  <h3 className='font-bold text-xl text-primary'>
-                    Tier Selection
-                  </h3>
-                  <p>
-                    Review this prospectus and select your preferred tier or
-                    in-kind option.
-                  </p>
-                </div>
-                <div className=''>
-                  <h2 className='font-bold text-5xl text-primary/20'>02</h2>
-                  <h3 className='font-bold text-xl text-primary'>
-                    Registration
-                  </h3>
-                  <p>
-                    Contact the Summit Secretariat to register interest and
-                    confirm tier availability.
-                  </p>
-                </div>
-                <div className=''>
-                  <h2 className='font-bold text-5xl text-primary/20'>03</h2>
-                  <h3 className='font-bold text-xl text-primary'>
-                    Summit Agreement
-                  </h3>
-                  <p>Complete and sign the Summit Partnership Agreement.</p>
-                </div>
-                <div className=''>
-                  <h2 className='font-bold text-5xl text-primary/20'>04</h2>
-                  <h3 className='font-bold text-xl text-primary'>Commitment</h3>
-                  <p>
-                    Submit payment or confirm in-kind commitment and provide
-                    your logo and organisational profile.
-                  </p>
-                </div>
+                <ProcessStep
+                  step='01'
+                  title='Tier Selection'
+                  description='Review this prospectus and select your preferred tier or in-kind option.'
+                />
+                <ProcessStep
+                  step='02'
+                  title='Registration'
+                  description='Contact the Summit Secretariat to register interest and confirm tier availability.'
+                />
+                <ProcessStep
+                  step='03'
+                  title='Summit Agreement'
+                  description='Complete and sign the Summit Partnership Agreement.'
+                />
+                <ProcessStep
+                  step='04'
+                  title='Commitment'
+                  description='Submit payment or confirm in-kind commitment and provide your logo and organisational profile.'
+                />
               </div>
             </div>
           </section>
