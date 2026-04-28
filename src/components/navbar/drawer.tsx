@@ -2,7 +2,6 @@ import { manrope } from '@/app/fonts';
 import { navLinks } from '@/lib/data';
 import Link from 'next/link';
 import Footer from '../sections/footer';
-import HowToPartnerSection from '../sections/how-to-partner';
 import { NavLinkMobile } from './nav-link';
 import Navbar from './navbar';
 
