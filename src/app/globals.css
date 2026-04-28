@@ -12,3 +12,7 @@
   --color-base-content: oklch(0.3973 0.0108 264.44);
   --color-neutral: oklch(0.9816 0.0017 247.84);
 }
+
+html {
+  scroll-behavior: smooth;
+}

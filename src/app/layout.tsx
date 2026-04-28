@@ -1,3 +1,4 @@
+import Drawer from '@/components/navbar/drawer';
 import type { Metadata } from 'next';
 import { publicSans } from './fonts';
 import './globals.css';
@@ -19,7 +20,9 @@ export default function RootLayout({
       data-theme='custom'
       className={`${publicSans.className} h-full antialiased`}
     >
-      <body className='min-h-full flex flex-col'>{children}</body>
+      <body className='min-h-full flex flex-col'>
+        <Drawer>{children}</Drawer>
+      </body>
     </html>
   );
 }

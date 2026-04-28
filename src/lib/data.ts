@@ -1,4 +1,12 @@
-import { TierData } from './definitions';
+import { NavLink, TierData } from './definitions';
+
+export const navLinks: NavLink[] = [
+  { href: '/', label: 'Home' },
+  { href: '/#about', label: 'About' },
+  { href: '/#benefits', label: 'Benefits' },
+  { href: '/sponsor', label: 'Sponsor' },
+  { href: '/contact', label: 'Contact' },
+];
 
 export const tiers: TierData[] = [
   {

@@ -1,3 +1,8 @@
+export type NavLink = {
+  href: string;
+  label: string;
+};
+
 export interface TierData {
   label: string;
   price: string;
