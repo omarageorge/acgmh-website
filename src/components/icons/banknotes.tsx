@@ -1,4 +1,4 @@
-const BanknotesIcon = ({ className, style }: React.SVGProps<SVGElement>) => (
+export const Banknotes = ({ className, style }: React.SVGProps<SVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     fill='none'
@@ -15,5 +15,3 @@ const BanknotesIcon = ({ className, style }: React.SVGProps<SVGElement>) => (
     />
   </svg>
 );
-
-export default BanknotesIcon;

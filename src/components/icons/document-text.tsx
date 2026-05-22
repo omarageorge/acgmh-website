@@ -1,4 +1,7 @@
-const DocumentTextIcon = ({ className, style }: React.SVGProps<SVGElement>) => (
+export const DocumentText = ({
+  className,
+  style,
+}: React.SVGProps<SVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     fill='none'
@@ -15,5 +18,3 @@ const DocumentTextIcon = ({ className, style }: React.SVGProps<SVGElement>) => (
     />
   </svg>
 );
-
-export default DocumentTextIcon;

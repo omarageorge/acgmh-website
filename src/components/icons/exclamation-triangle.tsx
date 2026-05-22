@@ -1,4 +1,4 @@
-export const BuildingLibrary = ({
+export const ExclamationTriangle = ({
   className,
   style,
 }: React.SVGProps<SVGElement>) => (
@@ -14,7 +14,7 @@ export const BuildingLibrary = ({
     <path
       strokeLinecap='round'
       strokeLinejoin='round'
-      d='M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z'
+      d='M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z'
     />
   </svg>
 );

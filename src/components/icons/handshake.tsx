@@ -1,6 +1,4 @@
-import React from 'react';
-
-const HandshakeIcon = ({ className, style }: React.SVGProps<SVGElement>) => (
+export const Handshake = ({ className, style }: React.SVGProps<SVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     width='24'
@@ -21,5 +19,3 @@ const HandshakeIcon = ({ className, style }: React.SVGProps<SVGElement>) => (
     <path d='M3 4h8' />
   </svg>
 );
-
-export default HandshakeIcon;

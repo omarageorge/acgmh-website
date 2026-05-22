@@ -1,10 +1,24 @@
+import {
+  Beaker,
+  Bolt,
+  Briefcase,
+  ComputerDesktop,
+  CurrencyDollar,
+  DocumentMagnifyingGlass,
+  ExclamationTriangle,
+  FaceSmile,
+  Photo,
+  ShieldCheck,
+  UserGroup,
+  Users,
+} from '@/components/icons';
 import { NavLink, TierData } from './definitions';
 
 export const navLinks: NavLink[] = [
-  { href: '/', label: 'Home' },
-  { href: '/#about', label: 'About' },
-  { href: '/#benefits', label: 'Benefits' },
-  { href: '/sponsor', label: 'Sponsor' },
+  { href: '/', label: 'About' },
+  { href: '/', label: 'Conference Themes' },
+  { href: '/', label: 'Call for Submissions' },
+  { href: '/sponsor', label: 'Sponsorships' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -97,5 +111,99 @@ export const tiers: TierData[] = [
       'Speaking slot (10 mins)',
       'Branded session room',
     ],
+  },
+];
+
+export const conference_themes: {
+  icon: React.ComponentType<React.SVGProps<SVGElement>>;
+  title: string;
+  body: string;
+}[] = [
+  {
+    icon: ShieldCheck,
+    title: 'Integrating Mental Health into PHC',
+    body: 'Strengthening primary healthcare systems for universal mental health coverage.',
+  },
+  {
+    icon: ComputerDesktop,
+    title: 'Digital Mental Health & AI',
+    body: 'Utilizing technology to expand reach and personalize care delivery',
+  },
+  {
+    icon: CurrencyDollar,
+    title: 'Financing & Sustainability',
+    body: 'Innovative funding models and demonstrating ROI for mental health investments.',
+  },
+  {
+    icon: Users,
+    title: 'Cultural & Gender Determinants',
+    body: 'Tailoring interventions to diverse cultural contexts and gender-specific needs.',
+  },
+  {
+    icon: Briefcase,
+    title: 'Workforce Development',
+    body: 'Task-sharing and capacity building for community health workers.',
+  },
+  {
+    icon: Beaker,
+    title: 'Research & Implementation Science',
+    body: 'Moving findings from clinical trials into community practice.',
+  },
+  {
+    icon: FaceSmile,
+    title: 'Youth Mental Health',
+    body: "Prioritizing the mental wellbeing of Africa's growing youth population.",
+  },
+  {
+    icon: Photo,
+    title: 'Arts, Faith & Culture',
+    body: 'Engaging traditional healers and creative arts in therapeutic pathways.',
+  },
+  {
+    icon: UserGroup,
+    title: 'Social Connection',
+    body: 'Combating loneliness and building strong community support networks.',
+  },
+  {
+    icon: ExclamationTriangle,
+    title: 'Suicide Prevention',
+    body: 'Evidence-based strategies for crisis intervention and prevention.',
+  },
+  {
+    icon: DocumentMagnifyingGlass,
+    title: 'Substance Use',
+    body: 'Addressing the intersection of mental health and addiction.',
+  },
+  {
+    icon: Bolt,
+    title: 'Trauma & Violence',
+    body: 'Healing from personal, community, and systemic trauma.',
+  },
+];
+
+export const cross_cutting_priorities: { title: string; body: string }[] = [
+  {
+    title: 'Equity and Inclusion',
+    body: 'Leaving no one behind in service delivery.',
+  },
+  {
+    title: 'Ethics and Safeguarding',
+    body: 'Upholding the highest standards of care and rights.',
+  },
+  {
+    title: 'Policy Translation',
+    body: 'Turning research into actionable national policies.',
+  },
+  {
+    title: 'Community Ownership',
+    body: 'Empowering locals to lead their own mental health programs.',
+  },
+  {
+    title: 'Scalability & Sustainability',
+    body: 'Models that grow and endure beyond pilot phases',
+  },
+  {
+    title: 'Interdisciplinary Collaboration',
+    body: 'Cross-sectoral partnerships for holistic health.',
   },
 ];

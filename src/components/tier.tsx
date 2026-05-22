@@ -1,7 +1,7 @@
-import { TierData } from '@/lib/definitions';
-import TierCircle from './tier-circle';
 import { manrope } from '@/app/fonts';
-import CheckIcon from './icons/check-icon';
+import { TierData } from '@/lib/definitions';
+import { Check } from './icons';
+import TierCircle from './tier-circle';
 
 const Tier: React.FC<TierData> = ({
   label,
@@ -41,7 +41,7 @@ const Tier: React.FC<TierData> = ({
       {features.map((feature, index) => (
         <li key={index} className='flex items-start gap-2.5'>
           <span>
-            <CheckIcon className='size-4' style={{ color: circleColor }} />
+            <Check className='size-4' style={{ color: circleColor }} />
           </span>
           <span className='text-sm text-primary'>{feature}</span>
         </li>

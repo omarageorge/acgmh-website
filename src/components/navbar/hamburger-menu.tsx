@@ -1,7 +1,7 @@
 const HamburgerMenu = () => (
   <label
     htmlFor='my-drawer-1'
-    className='btn btn-ghost drawer-button mx-1=2 md:hidden'
+    className='btn btn-ghost drawer-button mx-1=2 lg:hidden'
   >
     <svg
       xmlns='http://www.w3.org/2000/svg'

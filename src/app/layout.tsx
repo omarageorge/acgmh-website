@@ -17,6 +17,7 @@ export default function RootLayout({
   return (
     <html
       lang='en'
+      data-scroll-behavior='smooth'
       data-theme='custom'
       className={`${publicSans.className} h-full antialiased`}
     >

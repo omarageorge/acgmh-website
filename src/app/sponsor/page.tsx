@@ -1,8 +1,9 @@
 import Heading from '@/components/heading';
-import HandshakeIcon from '@/components/icons/handshake-icon';
+import { Handshake } from '@/components/icons';
 import OpportunityCard from '@/components/opportunity-card';
 import SectionHeading from '@/components/section-heading';
 import HowToPartnerSection from '@/components/sections/how-to-partner';
+import WhyJoinSection from '@/components/sections/why-join';
 import SubHeading from '@/components/sub-heading';
 import Tier from '@/components/tier';
 import { tiers } from '@/lib/data';
@@ -30,7 +31,7 @@ function PartnershipPage() {
 
           {/* In-Kind Partnerships */}
           <div>
-            <SectionHeading text='In-Kind Partnerships' icon={HandshakeIcon} />
+            <SectionHeading text='In-Kind Partnerships' icon={Handshake} />
 
             <div className='w-full h-auto mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
               <OpportunityCard
@@ -74,6 +75,7 @@ function PartnershipPage() {
           </div>
         </div>
       </section>
+      <WhyJoinSection />
       <HowToPartnerSection />
     </>
   );

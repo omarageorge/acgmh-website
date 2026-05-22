@@ -1,15 +1,13 @@
 import SpekeResortConferenceRoomImage from '@/assets/a_picture_of_speke_resort_munyonyo_conference_hall.jpg';
 import IconLabel from '@/components/icon-label';
-import CalendarIcon from '@/components/icons/calendar-icon';
-import LocationIcon from '@/components/icons/location-icon';
-import UserGroupIcon from '@/components/icons/user-group-icon';
+import { Calendar, MapPin, UserGroup } from '@/components/icons';
 import PartnershipLink from '@/components/partnership-link';
 import { RegistrationLink } from '@/components/registration-link';
+import AboutSection from '@/components/sections/about';
+import ConferenceThemes from '@/components/sections/conference-themes';
 import Image from 'next/image';
 import { manrope } from './fonts';
-import AboutSection from '@/components/sections/about';
-import WhyJoinSection from '@/components/sections/why-join';
-import HowToPartnerSection from '@/components/sections/how-to-partner';
+import WhoShouldAttend from '@/components/sections/who-should-attend';
 
 export default function Home() {
   return (
@@ -49,9 +47,9 @@ export default function Home() {
 
               {/* Key Highlight */}
               <div className='flex flex-col sm:flex-row items-start sm:items-center flex-wrap space-y-4 sm:space-y-0  sm:space-x-6'>
-                <IconLabel icon={LocationIcon} text='Makerere University' />
-                <IconLabel icon={CalendarIcon} text='7-9 April 2027' />
-                <IconLabel icon={UserGroupIcon} text='500+ Global Delegates' />
+                <IconLabel icon={MapPin} text='Makerere University' />
+                <IconLabel icon={Calendar} text='7-9 April 2027' />
+                <IconLabel icon={UserGroup} text='500+ Global Delegates' />
               </div>
 
               {/* Call to action */}
@@ -80,8 +78,8 @@ export default function Home() {
 
         <main className='w-full h-auto bg-base-100'>
           <AboutSection />
-          <WhyJoinSection />
-          <HowToPartnerSection />
+          <ConferenceThemes />
+          <WhoShouldAttend />
         </main>
       </div>
     </>

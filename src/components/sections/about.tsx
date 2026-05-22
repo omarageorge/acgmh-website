@@ -3,10 +3,7 @@ import { Color } from '@/lib/definitions';
 import Image from 'next/image';
 import ConferenceTrackCard from '../conference-track-card';
 import Heading from '../heading';
-import BanknotesIcon from '../icons/banknotes-icon';
-import BeakerIcon from '../icons/beaker-icon';
-import CheckCircleIcon from '../icons/check-circle-icon';
-import DocumentTextIcon from '../icons/document-text-icon';
+import { Banknotes, Beaker, CheckCircle, DocumentText } from '../icons';
 import SubHeading from '../sub-heading';
 
 const AboutSection = () => (
@@ -26,19 +23,19 @@ const AboutSection = () => (
       {/* Conference Tracks */}
       <div className='w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
         <ConferenceTrackCard
-          icon={BeakerIcon}
+          icon={Beaker}
           title='Public Health Systems'
           description='Reimagining health systems to integrate mental wellness at the primary care level.'
           color={Color.Secondary}
         />
         <ConferenceTrackCard
-          icon={DocumentTextIcon}
+          icon={DocumentText}
           title='Policy Agendas'
           description='Influencing continental and global frameworks to prioritize mental health equity.'
           color={Color.Accent}
         />
         <ConferenceTrackCard
-          icon={BanknotesIcon}
+          icon={Banknotes}
           title='Investment Priorities'
           description='Mobilizing resources from public and private sectors for scalable interventions.'
           color={Color.Primary}
@@ -71,15 +68,15 @@ const AboutSection = () => (
 
           <ul className='list-none space-y-4 mt-6'>
             <li>
-              <CheckCircleIcon className='w-6 h-6 text-secondary inline-block mr-2' />
+              <CheckCircle className='w-6 h-6 text-secondary inline-block mr-2' />
               <span>Interdisciplinary Dialogue</span>
             </li>
             <li>
-              <CheckCircleIcon className='w-6 h-6 text-secondary inline-block mr-2' />
+              <CheckCircle className='w-6 h-6 text-secondary inline-block mr-2' />
               <span>Global Leadership</span>
             </li>
             <li>
-              <CheckCircleIcon className='w-6 h-6 text-secondary inline-block mr-2' />
+              <CheckCircle className='w-6 h-6 text-secondary inline-block mr-2' />
               <span>Action-Oriented</span>
             </li>
           </ul>

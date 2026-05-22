@@ -1,9 +1,12 @@
-const CheckIcon = ({ className, style }: React.SVGProps<SVGSVGElement>) => (
+export const PlusCircle = ({
+  className,
+  style,
+}: React.SVGProps<SVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     fill='none'
     viewBox='0 0 24 24'
-    strokeWidth='2.5'
+    strokeWidth={1.5}
     stroke='currentColor'
     className={className}
     style={style}
@@ -11,9 +14,7 @@ const CheckIcon = ({ className, style }: React.SVGProps<SVGSVGElement>) => (
     <path
       strokeLinecap='round'
       strokeLinejoin='round'
-      d='m4.5 12.75 6 6 9-13.5'
+      d='M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z'
     />
   </svg>
 );
-
-export default CheckIcon;
