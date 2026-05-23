@@ -16,8 +16,8 @@ import { NavLink, TierData } from './definitions';
 
 export const navLinks: NavLink[] = [
   { href: '/', label: 'About' },
-  { href: '/', label: 'Conference Themes' },
-  { href: '/', label: 'Call for Submissions' },
+  // { href: '/', label: 'Conference Themes' },
+  // { href: '/', label: 'Call for Submissions' },
   { href: '/sponsor', label: 'Sponsorships' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -170,7 +170,7 @@ export const conference_themes: {
     body: 'Evidence-based strategies for crisis intervention and prevention.',
   },
   {
-    icon: DocumentMagnifyingGlass,
+    icon: Beaker,
     title: 'Substance Use',
     body: 'Addressing the intersection of mental health and addiction.',
   },
