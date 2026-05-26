@@ -4,7 +4,6 @@ import {
   Briefcase,
   ComputerDesktop,
   CurrencyDollar,
-  DocumentMagnifyingGlass,
   ExclamationTriangle,
   FaceSmile,
   Photo,
@@ -16,8 +15,8 @@ import { NavLink, TierData } from './definitions';
 
 export const navLinks: NavLink[] = [
   { href: '/', label: 'About' },
-  // { href: '/', label: 'Conference Themes' },
-  // { href: '/', label: 'Call for Submissions' },
+  { href: '/themes', label: 'Conference Themes' },
+  { href: '/abstracts', label: 'Abstracts' },
   { href: '/sponsor', label: 'Sponsorships' },
   { href: '/contact', label: 'Contact' },
 ];
