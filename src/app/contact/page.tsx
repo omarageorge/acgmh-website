@@ -1,12 +1,17 @@
 import ContactInfo from '@/components/contact-info';
+import Hero from '@/components/hero';
 import { BuildingLibrary, Envelope, MapPin, Phone } from '@/components/icons';
-import HowToPartnerSection from '@/components/sections/how-to-partner';
-import WhyJoinSection from '@/components/sections/why-join';
 import { manrope } from '../fonts';
 
 function ContactPage() {
   return (
     <>
+      <Hero
+        label='Contact Info · ACGMH 2027'
+        title='Get in Touch'
+        description='We would love to hear from you!'
+      />
+
       <section className=''>
         <div className='w-full max-w-7xl h-auto mx-auto px-6 py-12 sm:py-16 md:py-20 lg:py-24 space-y-12 sm:space-y-16'>
           <div className='space-y-3'>
@@ -44,8 +49,6 @@ function ContactPage() {
           </div>
         </div>
       </section>
-      <WhyJoinSection />
-      <HowToPartnerSection />
     </>
   );
 }

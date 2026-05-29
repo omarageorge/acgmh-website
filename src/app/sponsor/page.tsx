@@ -1,16 +1,35 @@
 import Heading from '@/components/heading';
-import { Handshake } from '@/components/icons';
+import Hero from '@/components/hero';
+import { Calendar, Handshake, MapPin, UserGroup } from '@/components/icons';
 import OpportunityCard from '@/components/opportunity-card';
 import SectionHeading from '@/components/section-heading';
 import HowToPartnerSection from '@/components/sections/how-to-partner';
 import WhyJoinSection from '@/components/sections/why-join';
 import SubHeading from '@/components/sub-heading';
 import Tier from '@/components/tier';
-import { tiers } from '@/lib/data';
+import { tiers } from '@/data/sponsorship-tiers';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Partnership & Sponsorship — ACGMHC 2027',
+  description:
+    'More than 116 million people in Africa are living with a mental health condition and less than one in ten receives any care, the stakes could not be higher. The ACGMH 2027 is where the evidence meets the will to act. We invite you to be part of that moment — not as a peripheral sponsor, but as a co-architect of what comes next.',
+};
 
 function PartnershipPage() {
   return (
     <>
+      <Hero
+        label='Call for Partners & Sponsors · ACGMH 2027'
+        title='Partnership & Sponsorship Prospectus'
+        description='More than 116 million people in Africa are living with a mental health condition and less than one in ten receives any care, the stakes could not be higher. The ACGMH 2027 is where the evidence meets the will to act. We invite you to be part of that moment — not as a peripheral sponsor, but as a co-architect of what comes next.'
+        pills={[
+          { text: 'Makerere University', icon: MapPin },
+          { text: '7 - 9 April 2027', icon: Calendar },
+          { text: '500+ Global Delegates', icon: UserGroup },
+        ]}
+      />
+
       <section className='w-full h-auto bg-[#f5f3ef]'>
         <div className='w-full max-w-7xl h-auto mx-auto px-6 py-12 sm:py-16 md:py-20 lg:py-24 space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24'>
           <div className=''>

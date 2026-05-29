@@ -1,13 +1,19 @@
 import SpekeResortConferenceRoomImage from '@/assets/a_picture_of_speke_resort_munyonyo_conference_hall.jpg';
 import IconLabel from '@/components/icon-label';
 import { Calendar, MapPin, UserGroup } from '@/components/icons';
-import PartnershipLink from '@/components/partnership-link';
-import { RegistrationLink } from '@/components/registration-link';
 import AboutSection from '@/components/sections/about';
 import ConferenceThemes from '@/components/sections/conference-themes';
-import Image from 'next/image';
-import { manrope } from './fonts';
 import WhoShouldAttend from '@/components/sections/who-should-attend';
+import { Metadata } from 'next';
+import Image from 'next/image';
+import Link from 'next/link';
+import { manrope } from './fonts';
+
+export const metadata: Metadata = {
+  title: 'Africa at the Centre of Global Mental Health Conference 2027',
+  description:
+    'Join us for a landmark international conference in 2027, bringing together leaders, researchers, policymakers, and innovators to shape the future of mental health in Africa and beyond. Explore groundbreaking research, innovative solutions, and collaborative opportunities to advance mental health care across the continent.',
+};
 
 export default function Home() {
   return (
@@ -54,8 +60,18 @@ export default function Home() {
 
               {/* Call to action */}
               <div className='flex flex-row items-start sm:items-center space-y-4 sm:space-y-0 space-x-4 sm:space-x-6'>
-                <RegistrationLink />
-                <PartnershipLink />
+                <Link
+                  href='#'
+                  className='btn btn-lg btn-accent shadow-none border-none text-primary rounded-full'
+                >
+                  Register Now
+                </Link>
+                <Link
+                  href='/sponsor'
+                  className='btn btn-lg btn-ghost shadow-none border border-primary text-primary rounded-full'
+                >
+                  Partner With Us
+                </Link>
               </div>
             </div>
 
