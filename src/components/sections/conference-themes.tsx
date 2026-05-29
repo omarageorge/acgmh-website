@@ -1,10 +1,11 @@
 import { manrope } from '@/app/fonts';
-import { conference_themes, cross_cutting_priorities } from '@/lib/data';
+import { cross_cutting_priorities } from '@/data/cross-cutting-priorities';
+import { themes } from '@/data/themes';
 import Heading from '../heading';
-import SubHeading from '../sub-heading';
-import ThemeCard from '../theme-card';
-import PriorityCard from '../priority-card';
 import ImpactCard from '../impact-card';
+import PriorityCard from '../priority-card';
+import SubHeading from '../sub-heading';
+import ThemeCardMini from '../theme-card-mini';
 
 const ConferenceThemes = () => (
   <section id='conference-themes' className='w-full h-auto bg-gray-500/6'>
@@ -18,8 +19,14 @@ const ConferenceThemes = () => (
       </div>
 
       <div className='grid items-stretch grid-cols-1 gap-4 mt-10 sm:mt-12 md:mt-16 sm:grid-cols-2 xl:grid-cols-3 sm:gap-6 lg:gap-8'>
-        {conference_themes.map((theme, index) => (
-          <ThemeCard key={index} {...theme} />
+        {themes.map(({ num, slug, label, subtitle, icon }) => (
+          <ThemeCardMini
+            key={num}
+            slug={slug}
+            label={label}
+            subtitle={subtitle}
+            icon={icon}
+          />
         ))}
       </div>
 
