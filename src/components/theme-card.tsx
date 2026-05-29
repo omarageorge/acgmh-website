@@ -1,31 +1,60 @@
 import { manrope } from '@/app/fonts';
+import { AccentColor } from '@/data/themes';
+import Link from 'next/link';
 
 interface ThemeCardProps {
-  icon: React.ComponentType<React.SVGProps<SVGElement>>;
-  title: string;
-  body: string;
+  num: number;
+  page_title: string;
+  subtitle: string;
+  label: string;
+  accent_color: AccentColor;
+  href: string;
 }
 
-const ThemeCard: React.FC<ThemeCardProps> = ({ icon: Icon, title, body }) => (
-  <div className='h-full rounded-2xl bg-white shadow-xm border border-secondary/15 p-5 sm:p-6 transition-all duration-300 hover:shadow-sm'>
-    <div className='flex items-start gap-4'>
-      <div className='flex-none rounded-xl bg-secondary/10 p-3'>
-        <Icon className='size-6 sm:size-7 text-secondary' />
-      </div>
-
-      <div className='min-w-0 flex-1'>
-        <h3
-          className={`${manrope.className} text-base sm:text-lg font-bold text-slate-900 leading-snug`}
+const ThemeCard: React.FC<ThemeCardProps> = ({
+  num,
+  label,
+  page_title,
+  subtitle,
+  accent_color,
+  href,
+}) => (
+  <Link href={href}>
+    <div className='group flex flex-col gap-4 rounded-2xl border border-gray-200 bg-white p-6 no-underline'>
+      {/* Header Row */}
+      <div className='flex items-center gap-3'>
+        {/* Number badge */}
+        <div
+          className={`w-10 h-10 flex-none flex items-center justify-center shrink-0 rounded-full px-2.5 py-1 text-sm font-bold leading-none ${accent_color === 'accent' ? 'bg-accent/10 text-accent' : 'bg-secondary/10 text-secondary'}`}
         >
-          {title}
-        </h3>
-
-        <p className='mt-2 text-sm sm:text-base leading-6 text-slate-500'>
-          {body}
+          {num}
+        </div>
+        {/* Label */}
+        <p
+          className={`${manrope.className} ${accent_color === 'accent' ? 'text-accent' : 'text-secondary'} font-bold uppercase text-sm tracking-[0.13em]`}
+        >
+          {label}
         </p>
       </div>
+
+      {/*  Page title */}
+      <div className='min-w-0'>
+        <h3 className='text-base font-bold leading-snug text-primary'>
+          {page_title}
+        </h3>
+      </div>
+
+      {/* Description */}
+      <p className='text-base leading-relaxed text-primary/80'>{subtitle}</p>
+
+      {/* CTA */}
+      <span
+        className={`mt-auto text-sm font-semibold ${accent_color === 'accent' ? 'text-accent' : 'text-secondary'}`}
+      >
+        Explore theme →
+      </span>
     </div>
-  </div>
+  </Link>
 );
 
 export default ThemeCard;

@@ -20,7 +20,7 @@ const WhyJoinSection = () => (
         />
         <BenefitCard
           title='Policy Alignment'
-          description='Align with WHO CMHAP 2013–2030, Africa CDC Strategy, and SDG 3.4'
+          description='Align with WHO CMHAP 2013 - 2030, Africa CDC Strategy, and SDG 3.4'
         />
         <BenefitCard
           title='Strategic Relationships'

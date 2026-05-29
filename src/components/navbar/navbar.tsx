@@ -1,11 +1,11 @@
 import { manrope } from '@/app/fonts';
-import { NavBarRegistrationLink } from '../registration-link';
-import { NavLink } from './nav-link';
-import { navLinks } from '@/lib/data';
-import Link from 'next/link';
-import HamburgerMenu from './hamburger-menu';
 import ConferenceLogo from '@/assets/logo.png';
+import { navLinks } from '@/data/nav-links';
 import Image from 'next/image';
+import Link from 'next/link';
+import { NavBarRegistrationLink } from '../registration-link';
+import HamburgerMenu from './hamburger-menu';
+import { NavLink } from './nav-link';
 
 const Navbar = () => (
   <div className='w-full fixed top-0 left-0 z-40 bg-base-100 shadow-xs'>

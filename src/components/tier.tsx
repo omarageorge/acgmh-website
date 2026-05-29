@@ -1,5 +1,5 @@
 import { manrope } from '@/app/fonts';
-import { TierData } from '@/lib/definitions';
+import { TierData } from '@/data/definitions';
 import { Check } from './icons';
 import TierCircle from './tier-circle';
 

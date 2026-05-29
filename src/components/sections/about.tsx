@@ -1,5 +1,5 @@
 import SpekeResortEntranceImage from '@/assets/a_picture_of_speke_resort_munyonyo_entrance.jpg';
-import { Color } from '@/lib/definitions';
+import { Color } from '@/data/definitions';
 import Image from 'next/image';
 import ConferenceTrackCard from '../conference-track-card';
 import Heading from '../heading';

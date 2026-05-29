@@ -1,12 +1,12 @@
 'use client';
 
 import { manrope } from '@/app/fonts';
-import { navLinks } from '@/lib/data';
+import { navLinks } from '@/data/nav-links';
 import Link from 'next/link';
+import { useRef } from 'react';
 import Footer from '../sections/footer';
 import { NavLinkMobile } from './nav-link';
 import Navbar from './navbar';
-import { useRef } from 'react';
 
 type Props = {
   children: React.ReactNode;
