@@ -1,4 +1,5 @@
 export * from './academic-cap';
+export * from './arrow-long-right';
 export * from './banknotes';
 export * from './beaker';
 export * from './bolt';
@@ -24,6 +25,8 @@ export * from './phone';
 export * from './photo';
 export * from './plus-circle';
 export * from './shield-check';
+export * from './shield-exclamation';
+export * from './sparkles';
 export * from './user-circle';
 export * from './user-group';
 export * from './users';

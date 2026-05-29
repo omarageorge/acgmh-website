@@ -1,9 +1,12 @@
-export const Check = ({ className, style }: React.SVGProps<SVGElement>) => (
+export const ArrowLongRight = ({
+  className,
+  style,
+}: React.SVGProps<SVGElement>) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'
     fill='none'
     viewBox='0 0 24 24'
-    strokeWidth='2.5'
+    strokeWidth={1.5}
     stroke='currentColor'
     className={className}
     style={style}
@@ -11,7 +14,7 @@ export const Check = ({ className, style }: React.SVGProps<SVGElement>) => (
     <path
       strokeLinecap='round'
       strokeLinejoin='round'
-      d='m4.5 12.75 6 6 9-13.5'
+      d='M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3'
     />
   </svg>
 );
