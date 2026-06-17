@@ -8,11 +8,11 @@ const Footer = () => (
       >
         ACGMH <span className='text-accent'>2027</span>
       </span>
-      <span className='text-sm sm:text-base text-blue-100/75 text-center md:text-left'>
+      <span className='text-sm sm:text-base text-white/75 text-center md:text-left'>
         Africa at the Center of Global Mental Health Conference &nbsp;·&nbsp;
         Kampala, Uganda
       </span>
-      <span className='text-sm sm:text-base text-blue-100/75'>
+      <span className='text-sm sm:text-base text-white/75'>
         &copy; 2027 Makerere University
       </span>
     </div>
