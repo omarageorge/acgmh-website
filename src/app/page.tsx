@@ -2,7 +2,7 @@ import SpekeResortConferenceRoomImage from '@/assets/a_picture_of_speke_resort_m
 import IconLabel from '@/components/icon-label';
 import { Calendar, MapPin, UserGroup } from '@/components/icons';
 import AboutSection from '@/components/sections/about';
-import ConferenceThemes from '@/components/sections/conference-themes';
+import SubConferenceThemes from '@/components/sections/sub-conference-themes';
 import WhoShouldAttend from '@/components/sections/who-should-attend';
 import { Metadata } from 'next';
 import Image from 'next/image';
@@ -94,7 +94,7 @@ export default function Home() {
 
         <main className='w-full h-auto bg-base-100'>
           <AboutSection />
-          <ConferenceThemes />
+          <SubConferenceThemes />
           <WhoShouldAttend />
         </main>
       </div>
