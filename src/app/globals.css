@@ -9,8 +9,8 @@
   --color-secondary: oklch(0.5237 0.086 179.14);
   --color-accent: oklch(0.7665 0.1387 91.06);
   --color-neutral-content: oklch(0.2237 0.0049 219.69);
+  --color-neutral: oklch(0.9667 0.0017 247.84);
   --color-base-content: oklch(0.3973 0.0108 264.44);
-  --color-neutral: oklch(0.9816 0.0017 247.84);
 }
 
 html {
