@@ -1,7 +1,7 @@
 import BodyText from '@/components/body-text';
 import GoldRule from '@/components/gold-rule';
 import Hero from '@/components/hero';
-import { ArrowLongRight } from '@/components/icons';
+import { ArrowLongRight, Calendar } from '@/components/icons';
 import SectionLabel from '@/components/section-label';
 import SectionTitle from '@/components/section-title';
 import MajorConferenceThemes from '@/components/sections/major-conference-themes';
@@ -11,9 +11,9 @@ import Link from 'next/link';
 import { manrope } from '../fonts';
 
 export const metadata: Metadata = {
-  title: 'Conference Themes — ACGMHC 2027',
+  title: 'Major Conference Themes — ACGMHC 2027',
   description:
-    "Explore the fifteen interconnected sub-themes framing the conference's core focus on innovation, equity, and resilience in community-based mental health systems across Africa and the global south.",
+    'The ACGMH 2027 conference is centered around three major themes that consolidate our sub-themes while communicating an African-centered, systems-focused vision for global mental health.',
 };
 
 export default function Themes() {
@@ -23,7 +23,12 @@ export default function Themes() {
         label='ACGMH 2027  ·  Makerere University, Kampala'
         title='Major Conference Themes'
         description='Strengthening Community-Based Mental Health Systems: Innovation, Equity, and Resilience. Three major conference tracks consolidate our sub-themes while communicating an African-centered, systems-focused vision for global mental health.'
+        cta={{
+          label: 'Browse Sub-Themes',
+          href: '/themes/sub-themes',
+        }}
         pills={[
+          { text: '7 - 9 April 2027', icon: Calendar },
           { text: '3 Major Themes' },
           { text: '15 Sub-Themes' },
           { text: '10 Cross-Cutting Priorities' },

@@ -19,9 +19,15 @@ export default function SubThemesPage() {
         label='ACGMH 2027  ·  Makerere University, Kampala'
         title='Conference Sub Themes'
         description="Fifteen interconnected sub-themes framing the conference's core focus on innovation, equity, and resilience in community-based mental health systems across Africa and the global south."
+        cta={{
+          label: 'Browse Major Themes',
+          href: '/themes',
+        }}
         pills={[
           { text: '7 - 9 April 2027', icon: Calendar },
+          { text: '3 Major Themes' },
           { text: '15 Sub-Themes' },
+          { text: '10 Cross-Cutting Priorities' },
         ]}
       />
 
