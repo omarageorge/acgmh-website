@@ -2,7 +2,7 @@ import { manrope } from '@/app/fonts';
 import GoldRule from '@/components/gold-rule';
 import Hero from '@/components/hero';
 import { ArrowLongRight, Calendar, Check } from '@/components/icons';
-import { getThemeBySlug, Theme } from '@/data/themes';
+import { getThemeBySlug, SubTheme } from '@/data/sub-themes';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -44,7 +44,7 @@ async function ThemeDetailPage({ params }: ThemeDetailPageProps) {
     contributions,
     strategic_text,
     cross_items,
-  } = theme as Theme;
+  } = theme as SubTheme;
 
   return (
     <>
@@ -298,7 +298,7 @@ async function ThemeDetailPage({ params }: ThemeDetailPageProps) {
             </Link>
 
             <Link
-              href='/themes'
+              href='/themes/sub-themes'
               className='btn btn-ghost shadow-none border border-primary text-primary hover:bg-primary/5 rounded-full'
             >
               Browse All Themes
