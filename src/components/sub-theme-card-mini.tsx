@@ -1,14 +1,14 @@
 import { manrope } from '@/app/fonts';
 import Link from 'next/link';
 
-interface ThemeCardProps {
+interface SubThemeCardMiniProps {
   slug: string;
   label: string;
   subtitle: string;
   icon: React.ComponentType<React.SVGProps<SVGElement>>;
 }
 
-const ThemeCardMini: React.FC<ThemeCardProps> = ({
+const SubThemeCardMini: React.FC<SubThemeCardMiniProps> = ({
   slug,
   label,
   subtitle,
@@ -37,4 +37,4 @@ const ThemeCardMini: React.FC<ThemeCardProps> = ({
   </Link>
 );
 
-export default ThemeCardMini;
+export default SubThemeCardMini;

@@ -26,7 +26,7 @@ export interface FocusBlock {
   items: string[];
 }
 
-export interface Theme {
+export interface SubTheme {
   slug: string;
   num: number;
   page_title: string;
@@ -43,7 +43,7 @@ export interface Theme {
   cross_items: CrossItem[];
 }
 
-export const themes: Theme[] = [
+export const sub_themes: SubTheme[] = [
   {
     slug: 'primary-health-care-integration',
     num: 1,
@@ -1911,10 +1911,10 @@ export const themes: Theme[] = [
   },
 ];
 
-export function getThemeBySlug(slug: string): Theme | undefined {
-  return themes.find((t) => t.slug === slug);
+export function getThemeBySlug(slug: string): SubTheme | undefined {
+  return sub_themes.find((t) => t.slug === slug);
 }
 
 export function getAllThemeSlugs(): string[] {
-  return themes.map((t) => t.slug);
+  return sub_themes.map((t) => t.slug);
 }

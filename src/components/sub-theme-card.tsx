@@ -1,8 +1,8 @@
 import { manrope } from '@/app/fonts';
-import { AccentColor } from '@/data/themes';
+import { AccentColor } from '@/data/sub-themes';
 import Link from 'next/link';
 
-interface ThemeCardProps {
+interface SubThemeCardProps {
   num: number;
   page_title: string;
   subtitle: string;
@@ -11,7 +11,7 @@ interface ThemeCardProps {
   href: string;
 }
 
-const ThemeCard: React.FC<ThemeCardProps> = ({
+const SubThemeCard: React.FC<SubThemeCardProps> = ({
   num,
   label,
   page_title,
@@ -57,4 +57,4 @@ const ThemeCard: React.FC<ThemeCardProps> = ({
   </Link>
 );
 
-export default ThemeCard;
+export default SubThemeCard;
