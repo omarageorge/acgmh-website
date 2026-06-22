@@ -14,7 +14,7 @@ const SubThemeCardMini: React.FC<SubThemeCardMiniProps> = ({
   subtitle,
   icon: Icon,
 }) => (
-  <Link href={`/themes/${slug}`}>
+  <Link href={`/themes/sub-themes/{slug}`}>
     <div className='h-full rounded-2xl bg-white shadow-xm border border-secondary/15 p-5 sm:p-6 transition-all duration-300 hover:shadow-sm'>
       <div className='flex items-start gap-4'>
         <div className='flex-none rounded-xl bg-secondary/10 p-3'>
